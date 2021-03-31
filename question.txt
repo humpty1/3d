@@ -1,0 +1,22 @@
+  string info = String.Format(
+    "Memory/virtual/garbage collector: {0}/{1}/{2} kBytes"
+        , proc.PeakWorkingSet64/1024
+           , proc.PeakVirtualMemorySize64/1024
+              , GC.GetTotalMemory(false)/1024);
+
+
+рисование  пирамидки  из 5 точек    5 * ( два дабла = 16 байт + один поинт 8 байт = 24 байта) = 120 байта
+app.exe -f data3d.min.txt -ln -v -l 4
+
+  память в метрах
+   
+  програм менеджер показывает                        Process и GarbageCollector
+
+память            пиковая память      виртуальная    PeakWorkingSet64 PeakVirtualMemorySize64  GetTotalMemory
+11,4 метра        11,4                12,4 метра     12,1             247,6                    0,612
+
+рисование  1000 строчек на 24000 байт.
+app.exe -f data3d.txt  -ln -v -l 4
+
+память            пиковая память      виртуальная    PeakWorkingSet64 PeakVirtualMemorySize64  GetTotalMemory
+11,9 метра        11,9                12,8 метра     12,6             248,6                    0,73
